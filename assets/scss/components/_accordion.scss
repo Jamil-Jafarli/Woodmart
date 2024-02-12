@@ -1,0 +1,29 @@
+.accordion{
+    width: 100% ;
+    ul{
+        margin-top: 30px;
+        width: 90%;
+        padding: 0;
+        list-style: none;
+        li{
+            
+            overflow: hidden;  
+            .accordion-header,i{  
+                
+                color: #666;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 5px 0;
+                transition: $trans;
+            }
+            .accordion-desc{
+                color: $form-color;
+                font-size: 14px;
+                height: 0px;
+                visibility: hidden;
+                transition: $trans;
+                transform: rotate();
+            }
+        }
+    }
+}

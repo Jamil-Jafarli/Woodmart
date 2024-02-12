@@ -1,0 +1,805 @@
+.categories{ 
+    position: relative;
+    border-bottom: solid 1px $form-border-color;
+    padding: $layout-padding;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    .categories-left{
+        width: 266px;
+        font-weight: 600;
+        color: white;
+        .ctg-left-elem{
+            width: 224px;
+            display: flex;
+            padding: 18px 20px;
+            background-color: $green;
+            justify-content: space-between;
+        }
+        .ctg-left-elem p{
+            
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        
+    }
+    .categories-center{
+        display: flex;
+        align-items: center;
+        .ctg-cnt-elem-menu-ul{
+            background-color: white;
+            position: relative;
+            z-index: 2;
+            width: auto;
+            padding: 0;
+           
+            list-style: none;
+            li{
+                display: flex;
+                width: 150px;
+                font-size: 14px;
+                color: $form-color;
+                padding: 10px;
+                transition: $trans;
+                &:hover{
+                    color: $green;
+                }
+            }
+          }
+        .ctg-cnt-elem p{
+            margin-right: 3px;
+            font-weight: 600;
+        }
+         .ctg-cnt-elem, .ctg-cnt-elem1{
+            &:hover .ctg-cnt-elem-menu1{
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+                
+            }
+            
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 12px;  
+            padding: 15px;
+            .ctg-cnt-elem-menu1{
+                background-color: white;
+                z-index: 5;
+                box-shadow: 0 0 3px rgba(0,0,0,.15);
+                border: 1px solid $form-border-color;
+                visibility: hidden;
+                opacity: 0;
+                box-sizing: border-box;
+                width: 100%;
+                left: 0;
+                top: 120%;
+                padding: 30px 100px;
+                position: absolute;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                transition: all 0.1s ease;
+                .ctg-cnt-elem-menu-elem{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    & img{
+                        margin-bottom: 10px;
+                        box-shadow: 0 0 9px rgba(0,0,0,.15);
+                        max-width: 220px;
+                    }
+                }
+            }
+        }
+        .ctg-cnt-elem2{
+            &:hover .ctg-cnt-elem-menu2{
+                top: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 12px;  
+            padding: 15px;
+            .ctg-cnt-elem-menu2{
+                box-shadow: 0 0 3px rgba(0,0,0,.15);
+                border: 1px solid $form-border-color;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 1;
+                box-sizing: content-box;
+                width: auto;
+                left: 0;
+                top: 120%;
+                width: auto;
+                margin: 30px 100px;
+                margin-top: 0;
+                margin-bottom: 0;
+                position: absolute;
+                display: flex;
+                transition: all 0.1s ease;
+                z-index: 5;
+                .ctg-cnt-elem-menu-ul{
+                    
+                    padding: 0;
+                    padding-right: 100px;
+                    list-style: none;
+                    li{
+                        font-size: 14px;
+                        color: $form-color;
+                        padding: 10px 0;
+                        transition: $trans;
+                        &:hover{
+                            color: $green;
+                        }
+                    }
+                  }
+                .ctg-cnt-elem-menu2-menu{
+                    
+                    background-color: $green;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    .ctg-cnt-elem-menu2-menu-elem{
+                        // &:hover{
+                        //     background-color: white;
+                        //     color: black;
+                        // }
+                        & i{
+                            margin-left: 103px;
+                            font-size: 12px;
+                        }
+                        transition: $trans;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px;
+                       
+                    }
+                }
+                .ctg-cnt-elem-menu2-contents1{
+                    display: flex;
+                    position: relative;
+                    z-index: 10;
+                       
+                    .ctg-cnt-elem-menu2-contents1-content1{
+                        display: flex;
+                        padding: 10px 20px;
+                        background-color: white;
+                        position: relative;
+                        z-index: 2;
+                    }
+                    .ctg-cnt-elem-menu2-contents1-content2{
+                        background-color: white;
+                        position: relative;
+                        z-index: 2;
+                        background-color: $gray;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        text-align: center;
+                        p{
+                            color: $form-color;
+                            font-weight: normal;
+                            width: 80%;
+                            font-size: 14px;
+                            margin-bottom: 20px;
+                        }
+                        img{
+                            max-width: 220px;
+                            max-height: 220px;
+                        }
+                    }
+                }
+                .ctg-cnt-elem-menu2-contents2 ,.ctg-cnt-elem-menu2-contents3, .ctg-cnt-elem-menu2-contents4{
+                   
+                    .ctg-cnt-elem-menu2-contents2-content1{
+                        background-color: white;
+                        position: relative;
+                        z-index: 2;
+                        display: flex;
+                        padding: 10px 20px;
+                    }
+                    
+                }
+                
+            }
+        }
+        .ctg-cnt-elem3{
+            &:hover .ctg-cnt-elem-menu3{
+                top: 110%;
+                visibility: visible;
+                opacity: 1;
+            }
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            font-size: 12px;  
+            padding: 15px;
+            .ctg-cnt-elem-menu3{
+                background-color: white;
+                box-shadow: 0 0 3px rgba(0,0,0,.15);
+                border: 1px solid $form-border-color;
+                visibility: hidden;
+                opacity: 0;
+                box-sizing: content-box;
+                width: auto;
+                top: 130%;
+                left: -100%;
+                margin: 30px ;
+                margin-top: 0;
+                margin-bottom: 0;
+                position: absolute;
+                display: flex;
+                transition: all 0.1s ease;
+                z-index: 5;
+                .ctg-cnt-elem-menu3-contents1{
+                    display: flex;
+                    
+                    .ctg-cnt-elem-menu3-contents1-content1{
+                        width: 55%;
+                        display: flex;
+                        padding: 10px 20px;
+                        .ctg-cnt-elem-menu-ul{
+                            width: auto;
+                            padding: 0;
+                            padding-left: 10px;
+                            padding-right: 90px;
+                            list-style: none;
+                            li{
+                                display: flex;
+                                width: 150px;
+                                font-size: 14px;
+                                color: $form-color;
+                                padding: 10px;
+                                transition: $trans;
+                                &:hover{
+                                    color: $green;
+                                }
+                            }
+                          }
+                    }
+                    .ctg-cnt-elem-menu3-contents1-content2{
+                        width: 45%;
+                        z-index: 3;
+                        padding: 10px 20px;
+                        border-left-color: rgba(0,0,0,0.05) !important;
+                        background-color: rgba(0,0,0,0.02) !important;
+                        .ctg-cnt-elem-menu3-contents1-content2-elem{
+                            padding: 10px 20px 10px 0;
+                            display: flex;
+                            .ctg-cnt-elem-menu3-contents1-content2-elem-right{
+                                width: 100%!important;
+                                padding: 0 10px;
+                                font-size: 14px;
+                                p{
+                                    transition: $trans;
+                                }
+                                p:hover{
+                                    color: $form-color;
+                                }
+                                .ctg-cnt-elem-menu3-contents1-content2-elem-right-bottom{
+                                    display: flex;
+                                    p{
+                                        font-size: 12px;
+                                        color: $gray-300;
+                                        font-weight: 200!important;
+                                    }                                    
+                                }
+                            }
+                        }
+                    }
+                   
+                }
+                
+                
+            }
+        }
+        .ctg-cnt-elem4{
+            &:hover .ctg-cnt-elem-menu4{
+                top: 110%;
+                visibility: visible;
+                opacity: 1;
+            }
+            position: relative;
+            
+            display: flex;
+            align-items: center;
+            font-size: 12px;  
+            padding: 15px;
+            .ctg-cnt-elem-menu4{
+                z-index: 5;
+                box-shadow: 0 0 3px rgba(0,0,0,.15);
+                border: 1px solid $form-border-color;
+                visibility: hidden;
+                opacity: 0;
+                box-sizing: content-box;
+                width: auto;
+                top: 130%;
+                left: -100%;
+                margin: 30px ;
+                margin-top: 0;
+                margin-bottom: 0;
+                position: absolute;
+                display: flex;
+                transition: all 0.1s ease;
+                
+                .ctg-cnt-elem-menu4-contents1{
+                    display: flex;
+                    background-color: white;
+                    z-index: 2;
+                    
+                    .ctg-cnt-elem-menu4-contents1-content1{
+                        width: 55%;
+                        display: flex;
+                        padding: 10px 20px;
+                        .ctg-cnt-elem-menu-ul{
+                            width: auto;
+                            padding: 0;
+                            padding-left: 10px;
+                            padding-right: 22.5px;
+                            list-style: none;
+                            li{
+                                display: flex;
+                                width: 150px;
+                                font-size: 14px;
+                                color: $form-color;
+                                padding: 10px;
+                                transition: $trans;
+                                &:hover{
+                                    color: $green;
+                                }
+                            }
+                          }
+                    }
+                   
+                }
+                
+                
+            }
+        }
+        .ctg-cnt-elem5{
+            &:hover .ctg-cnt-elem-menu5{
+                top: 110%;
+                visibility: visible;
+                opacity: 1;
+            }
+            position: relative;
+            
+            display: flex;
+            align-items: center;
+            font-size: 12px;  
+            padding: 15px;
+            .ctg-cnt-elem-menu5{
+                background-color: white;
+                z-index: 5;
+                box-shadow: 0 0 3px rgba(0,0,0,.15);
+                border: 1px solid $form-border-color;
+                visibility: hidden;
+                opacity: 0;
+                box-sizing: content-box;
+                width: auto;
+                top: 130%;
+                left: -100%;
+                margin: 30px ;
+                margin-top: 0;
+                margin-bottom: 0;
+                position: absolute;
+                display: flex;
+                transition: all 0.1s ease;
+                
+                .ctg-cnt-elem-menu5-contents1{
+                    display: flex;
+                    
+                    .ctg-cnt-elem-menu5-contents1-content1{
+                        width: 55%;
+                        display: flex;
+                        padding: 10px 20px;
+                        .ctg-cnt-elem-menu-ul{
+                            width: auto;
+                            padding: 0;
+                            padding-left: 10px;
+                            padding-right: 22.5px;
+                            list-style: none;
+                            li{
+                                display: flex;
+                                width: 150px;
+                                font-size: 14px;
+                                color: $form-color;
+                                padding: 10px;
+                                transition: $trans;
+                                &:hover{
+                                    color: $green;
+                                }
+                            }
+                          }
+                    }
+                   
+                }
+                
+                
+            }
+        }
+       
+        
+        
+
+        
+
+    }
+    .categories-right{
+        margin-left: 20%;
+        font-weight: 600;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        & p{
+            cursor: pointer;
+        }
+        .categories-right-hr{
+            background-color: $form-border-color;
+            margin: 0 15px;
+            width: 1px;
+            height: 23px;
+        }
+    }
+    
+
+
+}
+.categories2{
+    width: 100%;
+    height: 467px;
+    background-color: $gray;
+    display: flex;
+    
+    .ctg2-main1{
+            .ctg2-main1-text{
+                padding: 50px 0;
+                width: 82%;
+            }
+            overflow: hidden;
+            display: flex;
+            .ctg2-main1-img {
+                z-index: 0;
+                position: relative;
+                img{   
+                    max-width: 700px;
+                    max-height: 700px;
+                }
+               
+            }
+            .ctg2-main1-text-header{
+                font-size:50px;
+                color: #333;
+            }
+            .ctg2-main1-text-color{
+                margin: 15px 0;
+            }
+            .ctg2-main1-text-lorem{
+                color: $form-color;
+                margin: 15px 0;
+            }
+        
+    }
+    
+    .ctg2-left{ 
+        width: 18%;
+        padding: $layout-padding;
+        padding-top: 0;
+        padding-bottom: 0;
+        .ctg2-cnt-elem1-menu-ul{
+            background-color: white;
+            position: relative;
+           
+            width: auto;
+            padding: 0;
+           
+            list-style: none;
+            li{
+                display: flex;
+                width: 150px;
+                font-size: 14px;
+                color: $form-color;
+                padding: 10px;
+                transition: $trans;
+                &:hover{
+                    color: $green;
+                }
+            }
+          }
+        .ctg2-left-elem{
+            justify-content: space-between;
+            position: relative;
+            background-color: white;
+            cursor: pointer;
+            width: 224px;
+            border: solid 1px $form-border-color;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            transition: $trans;
+            .fa-chevron-right{
+                font-size: 10px;
+                color: $form-color;
+            }
+            &:hover{
+                background-color: $gray;
+            }
+            p{
+                font-weight: 600;
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+        .ctg2-left-elem1{
+            &:hover .ctg2-left-elem1-menu1{
+                    left: 100%;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            .ctg2-left-elem1-menu1{
+                z-index: 2;
+                background-color: white;
+                position: absolute;
+                left: 90%;
+                top: 0;
+                transition: $trans;
+                visibility: hidden;
+                opacity: 0;
+                .ctg2-left-elem1-menu1-top{
+                    padding: 20px;
+                    display: flex;
+                    img{
+                        padding: 20px;
+                    }
+                    
+                }
+                .ctg2-left-elem1-menu1-bottom{
+                    display: flex;
+                    background-color: $gray;
+                    justify-content: space-around;
+                    transition: $trans;
+                    img{
+                        max-width: 125px;
+                        filter: grayscale(1);
+                    }
+                    img:hover{
+                        filter: grayscale(0);
+                    }
+                    div{
+                        padding: 30px 0 ;
+                    }
+                }
+            }
+        }
+        .ctg2-left-elem2{
+            
+            &:hover .ctg2-left-elem2-menu1{
+                    left: 100%;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            .ctg2-left-elem2-menu1{
+                cursor: default;
+                padding: 50px;
+                padding-bottom: 0;
+                width: 57vw;
+                z-index: 2;
+                background-image: url(https://woodmart.xtemos.com/wp-content/uploads/2017/01/menu-categories-fr-6.png?id=4932);
+                position: absolute;
+                left: 90%;
+                top:-110%;
+                transition: $trans;
+                visibility: hidden;
+                opacity: 0;
+                .ctg2-left-elem2-menu1-div{
+                    div{
+                        width: 100%;
+                        display: flex;
+                    }
+                    .ctg2-cnt-elem-menu-ul2{
+                        list-style: none;
+                        margin-right: 50px;
+                        margin-bottom: 50px;
+                        .ctg2-cnt-elem-menu-ul2-li-header{
+                            color: white;
+                            transition: $trans;
+                            &:hover{
+                                color: $gray1;
+                            }
+                            font-size: 16px;
+                        }
+                        li{
+                            cursor: pointer;
+                            color: $gray1;
+                            transition: $trans;
+                            padding: 7px;
+                            font-size: 14px;
+                            &:hover{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ctg2-left-elem3{
+            &:hover .ctg2-left-elem3-menu1{
+                left: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+            .ctg2-left-elem3-menu1{
+                cursor: default;
+                display: flex;            
+                z-index: 2;
+                background-color: white;
+                position: absolute;
+                left: 90%;
+                top: -210%;
+                transition: $trans;
+                opacity: 0;
+                visibility: hidden;
+                li{
+                    cursor: pointer;
+                }
+                ul{
+                    width: 50%;
+                    margin-bottom: 20px
+                }
+                .ctg2-left-elem3-menu1-left{
+                    width: 30vw;
+                    padding: 20px;
+                    .ctg2-left-elem3-menu1-left-div{
+                        display: flex;
+                    }
+                }
+                .ctg2-left-elem3-menu1-right{
+                    background-color: #f9f9f9;
+                    padding: 20px;
+                    .ctg2-left-elem3-menu1-right-elem{
+                        display: flex;
+                    }
+                }
+                
+            }
+            
+
+        }
+        .ctg2-left-elem4{
+            &:hover .ctg2-left-elem4-menu1{
+                left: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+            .ctg2-left-elem4-menu1{
+                cursor: default;
+                display: flex;
+                z-index: 2;
+                background-color: white;
+                position: absolute;
+                left: 90%;
+                top: -314%;
+                transition: $trans;
+                visibility: hidden;
+                opacity: 0;
+                .ctg2-left-elem4-menu1-left{
+                    
+                    padding: 30px;
+                    padding-bottom: 0;
+                    margin-right: 10px;
+                    div{
+                        display: flex;
+                    }
+                    .ctg2-left-elem4-menu1-left-elem{
+                        display: flex;
+                        li{
+                            cursor: pointer;
+                            padding: 5px;
+                        }
+                        padding-bottom: 30px;
+                    }
+                }
+                .ctg2-left-elem4-menu1-right{
+                    position: relative;
+                    width: 17vw;
+                    padding: 30px;
+                    background-image: url("https://woodmart.xtemos.com/wp-content/uploads/2017/01/banner-half-menu-4-1.png");
+                    background-color: transparent;
+                    p{
+                        position: absolute;
+                        bottom: 30px;
+                        margin: 0;
+                        transition: $trans;
+                    }
+                    .ctg2-left-elem4-menu1-right-button{
+                        position: absolute;
+                        bottom: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        outline: none;
+                        border: none;
+                        background-color: black;
+                        font-size: 12px;
+                        color: white;
+                        padding: 10px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: $trans;
+                    }
+                    &:hover .ctg2-left-elem4-menu1-right-button{
+                        bottom: 20px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    &:hover p{
+                        bottom: 60px;
+                    }
+                }
+                
+            }
+        }
+        .ctg2-left-elem5{
+            &:hover .ctg2-left-elem5-menu1{
+                left: 100%;
+                visibility: visible;
+                opacity: 1;
+            }
+            .ctg2-left-elem5-menu1{
+                background-color: white;
+                cursor: default;
+                padding-bottom: 0;
+                width: 57vw;
+                z-index: 2;
+                position: absolute;
+                left: 90%;
+                top: -415%;
+                transition: $trans;
+                visibility: hidden;
+                opacity: 0;
+                .ctg2-left-elem5-menu1-top{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 30px;
+                    justify-content: space-evenly;
+                    .ctg2-cnt-elem1-menu-ul{
+                        margin-top: 10px;
+                        width: 25%;
+                        position: relative;   
+                        width: auto;
+                        padding: 0;
+                        list-style: none;
+                        li{
+                            display: flex;
+                            font-size: 14px;
+                            color: $form-color;
+                            padding: 10px;
+                            transition: $trans;
+                            &:hover{
+                                color: $green;
+                            }
+                        }
+                      }
+                }
+                .ctg2-left-elem5-menu1-bottom{
+                    background-color: #f1f1f1;
+                    display: flex;
+                    justify-content: space-around;
+                    .ctg2-left-elem5-menu1-bottom-img{
+                        width: 15%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}

@@ -1,0 +1,48 @@
+.solution{
+    padding: 7% 10%;
+    background: url("https://woodmart.b-cdn.net/wp-content/uploads/2015/12/about-us2-2.jpg?id=9082") center center;
+    background-size: cover ;
+    .solution_header{
+        color: gray;
+        font-size: 24px;
+    }
+    .solution_wd{
+        font-weight: 600;
+        font-size: 28px;
+        margin: 20px 0;
+    }
+    .solution_desc{
+        color: gray;
+        width: 40%;
+    }
+    .solution_buttons{
+        margin-top: 10px;
+        button{
+            padding: 10px 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .solution_button1{
+            margin-right: 10px;
+            outline: none;
+            border: 2px solid $green;
+            background-color: $green;
+            color: white;
+            transition: $trans;
+            &:hover{
+                border-color: #a2c174a6;
+                background-color: #83b735a6;
+            }
+        }
+        .solution_button2{
+            outline: none;
+            border: 2px solid rgb(221, 219, 219);
+            background-color: transparent;
+            color: black;
+            transition: $trans;
+            &:hover{
+                background-color: rgb(216, 216, 216)
+            }
+        }
+    }
+}

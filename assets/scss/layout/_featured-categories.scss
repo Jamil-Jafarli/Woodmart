@@ -1,0 +1,97 @@
+.ftrd_ctg{
+    width: 80%;
+    margin: 0 auto;
+    .section_div{
+
+        display: flex!important;
+        justify-content: space-between;
+        .section_big_div{
+            position: relative;
+        cursor: pointer;
+        overflow: hidden;
+          width: 48%;
+          &:hover {
+            img{
+                transform: scale(1.1);
+            }
+            
+            .section_big_div_quantity{
+                bottom: 10%;
+                opacity: 1;
+            }
+            .section_big_div_header{
+                bottom: 15%;
+            }
+        }
+          img{
+            width: 100%;
+            transition: all 0.4s ease;
+          }
+          .section_big_div_header{
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            transition: all 0.4s ease;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .section_big_div_quantity{
+            position: absolute;
+            bottom: 0%;
+            left: 10%;
+            transition: all 0.4s ease;
+            opacity: 0;
+            color: #777;
+            font-size: 14px;
+        }
+        }
+        .section_divs{
+            width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .section_small_div{
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+                margin-bottom: 20px;
+                width: 48%;
+                
+                &:hover {
+                    img{
+                        transform: scale(1.1);
+                    }
+                    
+                    .section_small_div_quantity{
+                        bottom: 10%;
+                        opacity: 1;
+                    }
+                    .section_small_div_header{
+                        bottom: 20%;
+                    }
+                }
+                img{
+                    max-width: 100%;
+                    transition: all 0.4s ease;
+                }
+                .section_small_div_header{
+                    position: absolute;
+                    bottom: 10%;
+                    left: 10%;
+                    transition: all 0.4s ease;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                .section_small_div_quantity{
+                    position: absolute;
+                    bottom: 0%;
+                    left: 10%;
+                    transition: all 0.4s ease;
+                    opacity: 0;
+                    color: #777;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

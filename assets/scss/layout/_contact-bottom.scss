@@ -1,0 +1,47 @@
+.contact-bottom{
+    width: 80%;
+    margin: 0 auto ;
+    margin-top: 30px;
+    display: flex;
+    .contact-bottom-left{
+        width: 50%;
+        border-right: #7777774e solid 1px;
+    }
+    .contact-bottom-right{        
+        width: 50%;
+        padding: 0 50px;      
+        .contact-bottom-right-creds{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .contact-bottom-right-cred{
+                outline: none;
+                width: 100%;
+                border: #7777774e solid 2px;
+                border-radius: 1px;
+                padding: 7px;
+            }
+            .contact-bottom-right-cred-big{
+                outline: none;
+                width: 100%;
+                border: #7777774e solid 2px;
+                border-radius: 1px;
+                padding: 7px;
+
+            }
+        }     
+        .contact-button{
+            cursor: pointer;
+            font-size: 14px;
+            background-color: $form-border-color;
+            padding: 10px;
+            outline: none;
+            border: none;
+            margin-top: 10px;
+            transition: $trans;
+            &:hover{
+                background-color: #F3F3F3;
+            }
+        }  
+    }
+}

@@ -1,0 +1,33 @@
+.wishlist-and-compare-section{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i{
+        font-size: 150px;
+        color: $gray-300;
+        margin-bottom: 20px;
+    }
+    .wishlist-and-compare-button{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        outline: none;
+        border: none;
+        background-color: $green;
+        border-bottom: solid 3px #74a32f;
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 15px 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        overflow: hidden;
+        transition: $trans;
+        &:hover{
+            background-color: #74a32f;
+        }
+    }
+}

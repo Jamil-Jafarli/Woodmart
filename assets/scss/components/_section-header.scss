@@ -1,0 +1,17 @@
+.section_header{
+    text-align: center;
+    .section_header1{
+        color: $form-color;
+        font-size: 14px;
+        padding-top: 90px;
+    }
+    .section_header2{
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px;
+    }
+    .section_header3{
+        color: #777;
+        padding-bottom: 30px;
+    }
+}
